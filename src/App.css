@@ -13,7 +13,7 @@ nav{
 
 .searchBar{
   margin: 10px auto;
-  width: 30%;
+  width: 35%;
   border: none;
   border-radius: 8px;
   height: 30px;
@@ -38,17 +38,17 @@ nav{
   height: 100%;
 }
 .word-container{
-  margin: 0 auto;
+  margin: 0 50%;
   margin-top: 70px;
   width: 40%;
   height: auto;
   text-align: left;
  
-  /* transform: translate(0%,-50%); */
+  transform: translate(-50%,0%);
 
 }
 .defi-container{
-  margin: 20px;
+  margin: 10px;
   width: 80%;
   min-height: auto;
   padding: 20px;
@@ -56,10 +56,10 @@ nav{
   border-radius: 20px;
 }
 .searched-word{
-  font-size: 32px;
+  font-size: 3rem;
   font-weight: bold;
   color: #134FE6;
-  margin-left: 20px;
+  margin-left: 10px;
   text-transform: capitalize;
 }
 .type{
@@ -67,8 +67,8 @@ nav{
   text-transform: capitalize;
 }
 .pronunciation{
-  margin-left: 20px;
-}
+  margin-left: 15px;
+} 
 .definition{
   margin-top: 10px;
 }
@@ -109,4 +109,59 @@ nav{
 @keyframes bouncer {
   from { transform: translateY(0) }
   to { transform: translateY(-100px) }
+}
+
+@media all and (max-width: 500px){
+
+  .searchBar{
+    margin: 10px 50%;
+    width: 60%;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    text-align: center;
+    transform: translate(-50%,0%);
+  }
+  .submitButton{
+    margin: 10px auto;
+    width: 50px;
+    background: black;
+    color: white;
+    height: 32px;
+    border-radius: 8px;
+  }
+  .searchBar, .submitButton{
+    vertical-align: middle;
+  }
+  .word-container{
+    margin: 0 50%;
+    margin-top: 70px;
+    width: 70%;
+    height: auto;
+    text-align: left;
+   
+    transform: translate(-50%,0%);
+  }
+  .defi-container{
+    margin: 10px;
+    width: 80%;
+    min-height: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .searched-word{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #134FE6;
+    margin-left: 10px;
+    text-transform: capitalize;
+  }
+  .type{
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .pronunciation{
+    margin-left: 15px;
+  }
 }
