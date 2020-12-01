@@ -13,7 +13,7 @@ nav{
 
 .searchBar{
   margin: 10px auto;
-  width: 40%;
+  width: 35%;
   border: none;
   border-radius: 8px;
   height: 30px;
@@ -23,7 +23,7 @@ nav{
 }
 .submitButton{
   margin: 10px auto;
-  width: 60px;
+  width: 50px;
   background: black;
   color: white;
   height: 32px;
@@ -77,36 +77,36 @@ nav{
 }
 
 
-/* spinner */
-.spinner {
+/* bouncing balls */
+.bouncer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
   width: 100px;
   height: 100px;
-  position: relative;
   margin: auto;
 }
-.spinner div {
-  box-sizing: border-box;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 8px solid transparent;
-  border-top-color: #ad60f5;
+.bouncer div {
+  width: 20px;
+  height: 20px;
+  background: #0077ff;
   border-radius: 50%;
-  animation: spinnerOne 1.2s linear infinite;
+  animation: bouncer 0.5s cubic-bezier(.19,.57,.3,.98) infinite alternate;
 }
-.spinner div:nth-child(2) {
-  border: 8px solid transparent;
-  border-bottom-color: #ad60f5;
-  animation: spinnerTwo 1.2s linear infinite;
+.bouncer div:nth-child(2) {
+  animation-delay: 0.1s;
+  opacity: 0.8;
+}
+.bouncer div:nth-child(3) {
+  animation-delay: 0.2s;
+  opacity: 0.6;
+}
+.bouncer div:nth-child(4) {
+  animation-delay: 0.3s;
+  opacity: 0.4;
 }
 
-@keyframes spinnerOne {
-  0% { transform: rotate(0deg); border-width: 10px; }
-  50% { transform: rotate(180deg); border-width: 1px; }
-  100% { transform: rotate(360deg); border-width: 10px; }
-}
-@keyframes spinnerTwo {
-  0% { transform: rotate(0deg); border-width: 1px; }
-  50% { transform: rotate(180deg); border-width: 10px; }
-  100% { transform: rotate(360deg); border-width: 1px; }
+@keyframes bouncer {
+  from { transform: translateY(0) }
+  to { transform: translateY(-100px) }
 }

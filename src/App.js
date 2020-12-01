@@ -23,7 +23,9 @@ function App() {
     <div className='App'>
       <Nav getApi={getApi} find={search}/>
 
-      {!words?<div className="spinner">
+      {!words?<div class="bouncer">
+        <div></div>
+        <div></div>
         <div></div>
         <div></div>
         </div>:
