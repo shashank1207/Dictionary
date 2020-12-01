@@ -84,7 +84,7 @@ nav{
   align-items: flex-end;
   width: 100px;
   height: 100px;
-  margin: auto;
+  margin: 20px auto;
 }
 .bouncer div {
   width: 20px;
@@ -111,7 +111,10 @@ nav{
   to { transform: translateY(-100px) }
 }
 
-@media all and (max-width: 500px){
+/* @media all and (max-width: 500px){
+  *{
+    width: 100vw;
+  }
 
   .searchBar{
     margin: 10px 50%;
@@ -136,7 +139,7 @@ nav{
   .word-container{
     margin: 0 50%;
     margin-top: 70px;
-    width: 70%;
+    width: 50%;
     height: auto;
     text-align: left;
    
@@ -144,7 +147,7 @@ nav{
   }
   .defi-container{
     margin: 10px;
-    width: 90%;
+    width: 50%;
     min-height: auto;
     padding: 20px;
     background-color: white;
@@ -164,4 +167,4 @@ nav{
   .pronunciation{
     margin-left: 15px;
   }
-}
+} */
